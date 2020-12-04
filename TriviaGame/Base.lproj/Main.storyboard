@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dN3-OG-8iX">
-                                <rect key="frame" x="17" y="55" width="44.5" height="20.5"/>
+                                <rect key="frame" x="17" y="55" width="297" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -84,14 +84,15 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1GL-tR-Wpy" secondAttribute="trailing" constant="20" id="U8q-vF-kVe"/>
                             <constraint firstItem="giB-oi-Mva" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VTx-g5-d7P"/>
                             <constraint firstItem="vJV-c6-zgm" firstAttribute="trailing" secondItem="1GL-tR-Wpy" secondAttribute="trailing" id="acT-Iw-BxD"/>
+                            <constraint firstItem="dN3-OG-8iX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="17" id="bkh-Ur-iQn"/>
                             <constraint firstItem="Qqd-Dw-PgY" firstAttribute="top" secondItem="1GL-tR-Wpy" secondAttribute="bottom" constant="213" id="eSV-5q-S5O"/>
                             <constraint firstItem="vJV-c6-zgm" firstAttribute="leading" secondItem="1GL-tR-Wpy" secondAttribute="leading" id="h3O-mr-HLl"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dN3-OG-8iX" secondAttribute="trailing" constant="352.5" id="jOv-cV-XJD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qqd-Dw-PgY" secondAttribute="trailing" constant="110" id="kIa-8T-4Cd"/>
                             <constraint firstItem="1GL-tR-Wpy" firstAttribute="top" secondItem="vJV-c6-zgm" secondAttribute="bottom" constant="58" id="kqy-pn-rmM"/>
                             <constraint firstItem="1GL-tR-Wpy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ml8-qh-7jx"/>
                             <constraint firstAttribute="trailing" secondItem="giB-oi-Mva" secondAttribute="trailing" id="oGF-PQ-EEj"/>
                             <constraint firstItem="vJV-c6-zgm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dN3-OG-8iX" secondAttribute="leading" id="u9H-Y7-5Dh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dN3-OG-8iX" secondAttribute="trailing" constant="100" id="wWE-wY-36i"/>
                         </constraints>
                     </view>
                     <connections>

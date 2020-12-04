@@ -47,7 +47,7 @@ class ViewController: UIViewController {
         let userAnswer = sender.currentTitle!
         let userGotItRight = quizBrain.getRightAnswer(userAnswer: userAnswer)
         
-        if userAnswer == userGotItRight {
+        if userGotItRight {
             sender.backgroundColor = UIColor.green
         } else {
             sender.backgroundColor = UIColor.red
@@ -65,6 +65,10 @@ class ViewController: UIViewController {
         choiceOne.setTitle(quizBrain.getChoices()[0], for: .normal)
         choiceTwo.setTitle(quizBrain.getChoices()[1], for: .normal)
         choiceThree.setTitle(quizBrain.getChoices()[2], for: .normal)
+        
+        scoreLabel.text = "Score: \(quizBrain.getScore())"
+        
+        progressLabel.progress = quizBrain.getProgress()
         
         choiceOne.layer.backgroundColor = UIColor.purple.cgColor
         choiceTwo.layer.backgroundColor = UIColor.purple.cgColor

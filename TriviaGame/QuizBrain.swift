@@ -38,8 +38,24 @@ let quiz = [
         return quiz[questionNumber].choice
     }
     
-    func getRightAnswer(userAnswer: String) -> String {
-        return quiz[questionNumber].correctAnswer
+    mutating func getRightAnswer(userAnswer: String) -> Bool {
+        if userAnswer == quiz[questionNumber].correctAnswer {
+            score += 1
+            return true
+        } else {
+            return false 
+        }
+    }
+    
+    func getProgress() -> Float {
+        
+        let progress = Float(questionNumber) / Float(quiz.count)
+        return progress
+    }
+    
+    func getScore() -> Int {
+        
+        return score 
     }
     
 
@@ -49,8 +65,10 @@ let quiz = [
             questionNumber += 1
         } else {
             questionNumber = 0
+            score = 0 
         }
     }
+
     
     
 }
