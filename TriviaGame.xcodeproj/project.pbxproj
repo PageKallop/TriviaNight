@@ -15,6 +15,8 @@
 		C06547FB25799F9E0086A56B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C06547F925799F9E0086A56B /* LaunchScreen.storyboard */; };
 		C065480625799F9E0086A56B /* TriviaGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C065480525799F9E0086A56B /* TriviaGameTests.swift */; };
 		C065481125799F9E0086A56B /* TriviaGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C065481025799F9E0086A56B /* TriviaGameUITests.swift */; };
+		C06548222579A6CE0086A56B /* QuizSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06548212579A6CE0086A56B /* QuizSet.swift */; };
+		C06548272579A6DF0086A56B /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06548262579A6DF0086A56B /* QuizBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		C065480C25799F9E0086A56B /* TriviaGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TriviaGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C065481025799F9E0086A56B /* TriviaGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaGameUITests.swift; sourceTree = "<group>"; };
 		C065481225799F9E0086A56B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C06548212579A6CE0086A56B /* QuizSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizSet.swift; sourceTree = "<group>"; };
+		C06548262579A6DF0086A56B /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				C06547EE25799F9E0086A56B /* AppDelegate.swift */,
 				C06547F025799F9E0086A56B /* SceneDelegate.swift */,
 				C06547F225799F9E0086A56B /* ViewController.swift */,
+				C06548212579A6CE0086A56B /* QuizSet.swift */,
+				C06548262579A6DF0086A56B /* QuizBrain.swift */,
 				C06547F425799F9E0086A56B /* Main.storyboard */,
 				C06547F725799F9E0086A56B /* Assets.xcassets */,
 				C06547F925799F9E0086A56B /* LaunchScreen.storyboard */,
@@ -258,7 +264,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C06548272579A6DF0086A56B /* QuizBrain.swift in Sources */,
 				C06547F325799F9E0086A56B /* ViewController.swift in Sources */,
+				C06548222579A6CE0086A56B /* QuizSet.swift in Sources */,
 				C06547EF25799F9E0086A56B /* AppDelegate.swift in Sources */,
 				C06547F125799F9E0086A56B /* SceneDelegate.swift in Sources */,
 			);

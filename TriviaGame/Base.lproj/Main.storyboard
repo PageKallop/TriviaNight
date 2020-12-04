@@ -1,24 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TriviaGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-1" translatesAutoresizingMaskIntoConstraints="NO" id="giB-oi-Mva">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dN3-OG-8iX">
+                                <rect key="frame" x="17" y="55" width="44.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1GL-tR-Wpy">
+                                <rect key="frame" x="20" y="479" width="374" height="130"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpi-zV-G6e">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="20"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6hP-rs-CkS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f30-Kc-IZb">
+                                        <rect key="frame" x="0.0" y="45" width="374" height="40"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="20"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fmN-49-Vux"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yq1-YY-Qya">
+                                        <rect key="frame" x="0.0" y="90" width="374" height="40"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="20"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ZS-v5-zpE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Qqd-Dw-PgY">
+                                <rect key="frame" x="110" y="822" width="194" height="4"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJV-c6-zgm">
+                                <rect key="frame" x="20" y="117" width="374" height="304"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="304" id="cuU-j6-1ba"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Qqd-Dw-PgY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110" id="4w7-UV-l4R"/>
+                            <constraint firstAttribute="bottom" secondItem="giB-oi-Mva" secondAttribute="bottom" id="CNK-Pd-ZOh"/>
+                            <constraint firstItem="vJV-c6-zgm" firstAttribute="top" secondItem="dN3-OG-8iX" secondAttribute="bottom" constant="41.5" id="ECC-Mc-g90"/>
+                            <constraint firstItem="giB-oi-Mva" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="KDK-Zq-rmP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Qqd-Dw-PgY" secondAttribute="bottom" constant="36" id="KGe-OW-ZAJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1GL-tR-Wpy" secondAttribute="trailing" constant="20" id="U8q-vF-kVe"/>
+                            <constraint firstItem="giB-oi-Mva" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VTx-g5-d7P"/>
+                            <constraint firstItem="vJV-c6-zgm" firstAttribute="trailing" secondItem="1GL-tR-Wpy" secondAttribute="trailing" id="acT-Iw-BxD"/>
+                            <constraint firstItem="Qqd-Dw-PgY" firstAttribute="top" secondItem="1GL-tR-Wpy" secondAttribute="bottom" constant="213" id="eSV-5q-S5O"/>
+                            <constraint firstItem="vJV-c6-zgm" firstAttribute="leading" secondItem="1GL-tR-Wpy" secondAttribute="leading" id="h3O-mr-HLl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dN3-OG-8iX" secondAttribute="trailing" constant="352.5" id="jOv-cV-XJD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qqd-Dw-PgY" secondAttribute="trailing" constant="110" id="kIa-8T-4Cd"/>
+                            <constraint firstItem="1GL-tR-Wpy" firstAttribute="top" secondItem="vJV-c6-zgm" secondAttribute="bottom" constant="58" id="kqy-pn-rmM"/>
+                            <constraint firstItem="1GL-tR-Wpy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ml8-qh-7jx"/>
+                            <constraint firstAttribute="trailing" secondItem="giB-oi-Mva" secondAttribute="trailing" id="oGF-PQ-EEj"/>
+                            <constraint firstItem="vJV-c6-zgm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dN3-OG-8iX" secondAttribute="leading" id="u9H-Y7-5Dh"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="choiceOne" destination="xpi-zV-G6e" id="pdf-Mi-rWC"/>
+                        <outlet property="choiceThree" destination="yq1-YY-Qya" id="8JX-yd-3E9"/>
+                        <outlet property="choiceTwo" destination="f30-Kc-IZb" id="Slf-JA-GIY"/>
+                        <outlet property="progressLabel" destination="Qqd-Dw-PgY" id="7Hm-IP-QUX"/>
+                        <outlet property="questionLabel" destination="vJV-c6-zgm" id="Hhl-mz-kx5"/>
+                        <outlet property="scoreLabel" destination="dN3-OG-8iX" id="evL-Y2-Jbf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-214.49275362318843" y="88.392857142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="sign-1" width="563.5" height="1218.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
